@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Show All Items</a><br />
+Task Name :<span th:text="${todo.taskName}" ></span><br />
+Due Date :<span th:text="${todo.dueDate}" ></span><br />
+Priority :<p th:text="${todo.priority}" ></p><br />
+<a th:href="@{/delete/{id}(id=${todo.id})}">Delete this item</a>
+</body>
+</html>
